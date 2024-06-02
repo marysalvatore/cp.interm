@@ -1,0 +1,9 @@
+<svg version="1.1" 
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px" height="32px"
+	 viewBox="0 0 32 32" xml:space="preserve">
+<polygon fill="#0098DB" points="6,26 6,0 0,0 0,26 0,26 "/>
+<polygon fill="#ED1C24" points="26,0 26,26 32,26 32,0 "/>
+<polygon fill="none" points="20.3,13.5 26.1,19.7 26.1,6.3 20.3,12.7 "/>
+<polygon fill="#F79421" points="20,13.3 20,20 6,20 0,26 4,26 4,32 12.7,26 32,26 "/>
+<polygon fill="#96BC33" points="26.1,0 0,0 6,6 20,6 20,12.7 26.1,6.3 26.6,5.8 32,0 "/>
+</svg>

@@ -31,3 +31,237 @@ body {
     text-wrap: balance;
   }
 }
+
+/* Small screens */
+.tab_small {
+  overflow: hidden;
+  background-color: #0298dd;
+}
+
+.tab_small button {
+  background-color: #65bfe3;
+  padding: 5em;
+  width: 33.3%;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+  color: white
+}
+
+.tab_small button:hover {
+  background-color: #0298dd;
+}
+
+.tab_small button:active {
+  background-color: #0298dd !important;
+}
+
+.tabcontent_small {
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
+}
+
+
+/* Large screens */
+.tab {
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: #ccc;
+  padding: 5em;
+  width: 33.3%;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: white;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: white;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+  background: white;
+}
+
+.show {
+  display: block;
+}
+.m-webmail{
+  fill:#70C5E8
+}
+.bbn {
+  background: #e3e3e3;
+  border-radius: 2px;
+  color: #333;
+  float: left;
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0 4px 4px 0;
+  padding: 8px 0 8px 37px;
+  text-align: left;
+  height: 40px;
+  position: relative;
+  box-sizing: border-box;
+  align-items: flex-start;
+
+}
+.login-form-product-btn-info{
+    background-image: linear-gradient(transparent, transparent), url(../../public/info-black_16.svg);
+    background-repeat: no-repeat;
+    display: block;
+    height: 16px;
+    opacity: 0.15;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    width: 16px;
+}
+.link {
+    text-decoration: none;
+    color: #0098DB
+}
+.link:hover {
+  color: #0098DB
+}
+.login-services {
+  height: 88px;
+  display: flex;
+  justify-content: space-around;
+  font-size: 13px !important;
+}
+.link-service-description {
+  display: flex;
+  margin-top: 10px;
+}
+.link-service {
+  text-align: center;
+  text-decoration: none;
+  color: #333;
+}
+.mb4 {
+  margin-bottom: 4px !important;
+}
+
+.link-service-description-icon {
+  position: relative;
+  margin-left: 5px;
+  top: 0;
+  right: 0;
+}
+
+.login-form-product-btn-info {
+  background-image: url(../../public/info-black_16.svg);
+  background-image: linear-gradient(transparent, transparent), url(../../public/info-black_16.svg);
+  background-repeat: no-repeat;
+  display: block;
+  height: 16px;
+  opacity: 0.15;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  width: 16px;
+}
+
+.login-form-admin-text {
+  font-size: 13px;
+  line-height: 18px;
+  margin: 0;
+  text-align: left;
+}
+
+.login-form-field-tooltip {
+  position: absolute;
+  right: 10px;
+  top: 17px;
+}
+
+.login-feedback {
+  z-index: 100001;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 0;
+  margin: 0;
+  vertical-align: baseline;
+}
+
+.login-feedback .login-feedback-accordion {
+  background: #ed941e;
+  padding: 9px 10px;
+  float: right;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+}
+
+.login-feedback .login-feedback-accordion .login-feedback-trigger {
+  color: #ffffff;
+  background: none;
+  border: none;
+  cursor: pointer;
+  height: 22px;
+  outline: none;
+  text-align: right;
+  position: relative;
+  padding: 0 6px 0 2px;
+  line-height: 20px;
+  font-weight: bold;
+}
+
+.login-footer {
+  background: #066FA9;
+  position: relative;
+  width: 100%
+}
+
+.login-footer-content {
+  margin: 0 auto;
+  padding: 0 10px;
+  width: 1080px;
+}
+
+.login-footer-content:before, .login-footer-content:after {
+  display: table;
+  content: "";
+}
+
+.login-footer-content:before, .login-footer-content:after {
+  display: table;
+  content: "";
+}
+.login-footer-content:after {
+  clear: both;
+}
+.small_screen {
+  display: block;
+}
+.large_screen{
+  display: none;
+}
+
+@media only screen and (min-width: 568px) {
+  .large_screen{
+    display: block;
+  }
+  .small_screen{
+    display: none
+  }
+}
