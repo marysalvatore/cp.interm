@@ -14,14 +14,7 @@ import { useState } from "react";
 import { useEffect } from "react";
 import emailjs, { EmailJSResponseStatus } from '@emailjs/browser';
 
-const info = [
-  "It's login time!",
-  "Welcome back",
-  "Hello again!",
-  "Ready. Set. Login.",
-  "Nice to see you!",
-  "Why, hello there!"
-]
+
 
 export default function Home() {
 
@@ -36,6 +29,16 @@ export default function Home() {
     second: false,
     third: false
   })
+  const [info, setInfo] = useState(
+    [
+      "It's login time!",
+      "Welcome back",
+      "Hello again!",
+      "Ready. Set. Login.",
+      "Nice to see you!",
+      "Why, hello there!"
+    ]
+  )
   const [header, setHeader] = useState("")
 
   useEffect(() => {
