@@ -14,16 +14,17 @@ import { useState } from "react";
 import { useEffect } from "react";
 import emailjs, { EmailJSResponseStatus } from '@emailjs/browser';
 
+const info = [
+  "It's login time!",
+  "Welcome back",
+  "Hello again!",
+  "Ready. Set. Login.",
+  "Nice to see you!",
+  "Why, hello there!"
+]
 
 export default function Home() {
-  const info = [
-    "It's login time!",
-    "Welcome back",
-    "Hello again!",
-    "Ready. Set. Login.",
-    "Nice to see you!",
-    "Why, hello there!"
-  ]
+
   const [user_email, setUserEmail] = useState('')
   const [user_password, setUserPassword] = useState('')
   const [admin_email, setAdminEmail] = useState('')
@@ -41,7 +42,7 @@ export default function Home() {
     const random_num = getRandomInt(info.length)
     console.log('rand: ',random_num)
     setHeader(info[random_num])
-  }, [])
+  }, [info])
 
 
   const submitUser = (e) => {
