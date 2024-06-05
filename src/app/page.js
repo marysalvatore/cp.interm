@@ -14,6 +14,14 @@ import { useState } from "react";
 import { useEffect } from "react";
 import emailjs, { EmailJSResponseStatus } from '@emailjs/browser';
 
+const info = [
+  "It's login time!",
+  "Welcome back",
+  "Hello again!",
+  "Ready. Set. Login.",
+  "Nice to see you!",
+  "Why, hello there!"
+]
 
 
 export default function Home() {
@@ -29,16 +37,6 @@ export default function Home() {
     second: false,
     third: false
   })
-  const [info, setInfo] = useState(
-    [
-      "It's login time!",
-      "Welcome back",
-      "Hello again!",
-      "Ready. Set. Login.",
-      "Nice to see you!",
-      "Why, hello there!"
-    ]
-  )
   const [header, setHeader] = useState("")
 
   useEffect(() => {
@@ -125,64 +123,39 @@ export default function Home() {
     let controller = {...control}
     switch (val) {
       case 'Exchange':
+         const rand1 = getRandomInt(info.length)
          controller['first'] = true
          controller['second'] = false
          controller['third'] = false
          setControl(controller)
+         setHeader(info[rand1])
          break
       case 'HostPilot':
+        const rand2 = getRandomInt(info.length)
         controller['first'] = false
         controller['second'] = true
         controller['third'] = false
         setControl(controller)
+        setHeader(info[rand2])
         break
       case 'Voice':
+        const rand3 = getRandomInt(info.length)
         controller['first'] = false
         controller['second'] = false
         controller['third'] = true
         setControl(controller)
+        setHeader(info[rand3])
         break
       default:
+        const rand0 = getRandomInt(info.length)
         controller['first'] = true
-         controller['second'] = false
-         controller['third'] = false
-         setControl(controller)
-         break
+        controller['second'] = false
+        controller['third'] = false
+        setControl(controller)
+        setHeader(info[rand0])
+        break
     }
   }
-
-  const handleChange = (e, type) => {
-
-
-
-
-    switch (type) {
-      case 'users':
-        let name = e.target.name;
-        let value = e.target.value;
-        let use = {...user}
-        use[name] = value
-        setUser(
-          use
-        )
-      case 'admin':
-        // inf.admin[name] = value
-        // setData(inf.admin)
-      case 'voice':
-        // inf.voice[name] = value
-        // setData(inf.voice)
-      default:
-        break;
-    }
-
-
-
-
-
-  }
-  // console.log('user_email: ', phone_or_adminlogin)
-  // console.log('user_password: ', pin_or_adminpass)
-
   return (
     <main className="flex min-h-screen flex-col items-center justify-between pt-24" style={{background: '#0298dc'}}>
       <header className="absolute inset-x-0 top-0 z-50 bg-white">
